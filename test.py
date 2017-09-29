@@ -2,7 +2,7 @@
 Interactive language with build tools and package managers
 package managers-anaconda and pip
 
-
+size of any iterable comes with function len() for length
 '''
 
 import numpy
@@ -10,6 +10,8 @@ import numpy
 
 
 def main():
+    x = int(raw_input("give me a number "))
+
     x = 5
     print x
 
@@ -26,7 +28,7 @@ def main():
     d = {"fourteen":14, "seven":7}
     #in Java HashMap<string,int> = new HashMap<string,int>()
     print d["fourteen"]
-    print
+
 
 
 if __name__ == '__main__':
