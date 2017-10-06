@@ -24,6 +24,7 @@ class Burger():
         return self.patty
 
 
+
 def main():
     array = np.ndarray([1, 2, 3, 4])
     # instead of:
