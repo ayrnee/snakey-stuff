@@ -1,4 +1,17 @@
 '''
+git commands:
+git stage
+git commit -am "message"
+git push
+
+to create a branch and then checking it out
+git checkout -b nameOfBranch
+to check what branch you are on use
+git branch
+to switch branches use
+git checkout nameOfBranch
+
+
 Interactive language with build tools and package managers
 package managers-anaconda and pip
 
