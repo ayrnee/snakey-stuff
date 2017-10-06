@@ -13,6 +13,7 @@ class Burger():
         self.tomato = tomato
         self.bun = bun
         self.patty = patty
+        self.__hidden = False
         return
 
     def getTomato(self):
@@ -24,6 +25,8 @@ class Burger():
     def getPatty(self):
         return self.patty
 
+    def getHidden(self):
+        return self.__hidden
 
 
 def main():
@@ -32,8 +35,10 @@ def main():
     # array = numpy.ndarray([1, 2, 3, 4])
     moger = Burger() # moger is an instance of Burger
     # del moger
-    moger = "burger"
-    print moger
+    # print moger.getTomato()
+    # print moger.__hidden
+    moger.bun = "flat"
+
 
 if __name__ == "__main__":
     main()
