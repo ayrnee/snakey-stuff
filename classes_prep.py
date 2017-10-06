@@ -28,6 +28,8 @@ class Burger():
     def getHidden(self):
         return self.__hidden
 
+    ## methods that begin and end with __ are methods that all classes have and can implement
+
 
 def main():
     array = np.ndarray([1, 2, 3, 4])
