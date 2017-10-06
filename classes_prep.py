@@ -9,12 +9,13 @@ class Burger():
         ## this is the constructor, this makes the class for us
         ## everytime we instatiate the class, this function gets called
         ## every declaration requires initialization
+        ## self is needed here since we need to specify unlike in c++
         self.tomato = False
         self.bun = "fire"
         self.patty = "lamb"
+
 
 def main():
     array = np.ndarray([1, 2, 3, 4])
     # instead of:
     array = numpy.ndarray([1, 2, 3, 4])
-    
