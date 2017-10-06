@@ -1,8 +1,13 @@
 '''
 this is called the docstring - it's the highlevel program overview
+this is a module, and i wanna use this class in my main function
+i can have multiple classes in here, so long as they are related in some way
+there should not be ANY main function here, this file should NOT be runnable
 '''
 
 import numpy as np # we import the module numpy as the keyword np
+
+GOOD_BURGER = 50
 
 class Burger():
     def __init__(self, tomato=True, bun="classic", patty="lamb"):
@@ -29,18 +34,23 @@ class Burger():
         return self.__hidden
 
     ## methods that begin and end with __ are methods that all classes have and can implement
+    def __str__(self):
+        string = "burger: hasTomato: " + str(self.tomato) + " and " + self.patty + " kind of meat"
+        return string
 
 
-def main():
-    array = np.ndarray([1, 2, 3, 4])
-    # instead of:
-    # array = numpy.ndarray([1, 2, 3, 4])
-    moger = Burger() # moger is an instance of Burger
-    # del moger
-    # print moger.getTomato()
-    # print moger.__hidden
-    moger.bun = "flat"
-
-
-if __name__ == "__main__":
-    main()
+# def main():
+#     array = np.ndarray([1, 2, 3, 4])
+#     # instead of:
+#     # array = numpy.ndarray([1, 2, 3, 4])
+#     moger = Burger() # moger is an instance of Burger
+#     # del moger
+#     # print moger.getTomato()
+#     # print moger.__hidden
+#     moger.bun = "flat"
+#     print str(moger)
+#
+#
+#
+# if __name__ == "__main__":
+#     main()

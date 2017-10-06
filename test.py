@@ -57,6 +57,11 @@ import numpy
 #from copy import *
 #deepcopy(list_item)
 from copy import deepcopy
+import sys
+
+sys.add.path("~/modules/new_module_project_dir")
+
+import classes_prep
 
 def f(x):
     return x ** 2 + 3 * x
@@ -103,7 +108,8 @@ def main():
 
     word_list = string.split()
 
-
+    ernger = classes_prep.Burger(tomato=True, bun="fuego", patty="human'")
+    print str(ernger)
 
 
 
