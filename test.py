@@ -4,6 +4,9 @@ package managers-anaconda and pip
 
 size of any iterable comes with function len() for length
 
+"he" * 3 = "hehehe"
+[0] * 3 = [0,0,0]
+
 loops:
 range function takes in one mandatory arg and two default params
 range(3): returns a list => [0,1,2]
@@ -21,12 +24,36 @@ for i in lissy:
 for i in range(len(lissy)):
     print lissy[i]
 
+i = 0
+while (i < len(lissy)):
+    print lissy[i]
+    i += 1
+
+Strings are ALWAYS immutable
+
+Classes:
+
 
 '''
 
 import numpy
+#Method1
+#import copy
+#copy.deepcopy(list_item)
+#Method2
+#from copy import *
+#deepcopy(list_item)
+from copy import deepcopy
 
+def f(x):
+    return x ** 2 + 3 * x
 
+def g(lissy):
+    x = raw_input("give me something ")
+    y = raw_input("give me another something")
+    lissy2 = [x,y]
+    lissy.extend(lissy2)
+    return lissy
 
 def main():
     # x = int(raw_input("give me a number "))
@@ -47,6 +74,22 @@ def main():
     # d = {"fourteen":14, "seven":7}
     # #in Java HashMap<string,int> = new HashMap<string,int>()
     # print d["fourteen"]
+    lissy = [5, "world", "sevem" , 7]
+    # g(lissy)
+    # print lissy
+    # x = deepcopy(lissy)
+    # x.append("sissy")
+    # print x
+    # print lissy
+
+    print lissy[-1]
+    string = "   \n75\t22\n5 "
+    string2 = string.strip()
+    print string
+    print string2
+
+    word_list = string.split()
+
 
 
 
