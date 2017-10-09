@@ -38,6 +38,11 @@ class Burger():
         string = "burger: hasTomato: " + str(self.tomato) + " and " + self.patty + " kind of meat"
         return string
 
+    def __unicode__(self):
+        return
+
+    def __eq__(self, other):
+        return self.patty == other.patty
 
 # def main():
 #     array = np.ndarray([1, 2, 3, 4])

@@ -46,7 +46,6 @@ Strings are ALWAYS immutable
 
 Classes:
 
-
 '''
 
 import numpy
@@ -59,9 +58,10 @@ import numpy
 from copy import deepcopy
 import sys
 
-sys.add.path("~/modules/new_module_project_dir")
+sys.path.append("~/ernest-projects/snakey-stuff/walnutz")
 
-import classes_prep
+from walnutz import classes_prep
+
 
 def f(x):
     return x ** 2 + 3 * x
@@ -100,16 +100,24 @@ def main():
     # print x
     # print lissy
 
-    print lissy[-1]
-    string = "   \n75\t22\n5 "
-    string2 = string.strip()
-    print string
-    print string2
+    eat = None
+    dat = {'key': None, 'blue': 'balls'}
 
-    word_list = string.split()
+    if dat['blue'] is not None:
+        print "quick"
+    else:
+        print "fast"
 
-    ernger = classes_prep.Burger(tomato=True, bun="fuego", patty="human'")
-    print str(ernger)
+    # print lissy[-1]
+    # string = "   \n75\t22\n5 "
+    # string2 = string.strip()
+    # print string
+    # print string2
+
+    # word_list = string.split()
+
+    # ernger = classes_prep.Burger(tomato=True, bun="fuego", patty="human'")
+    # print str(ernger)
 
 
 
